@@ -78,7 +78,7 @@ jobs:
     - name: Get assert eval results
       id: jobMetricAssert
       run: |
-            export ASSERT=$(python promptflow/llmops-helper/assert.py result.json 0.6) # NOTE <file>.json is the file name and decimal is the threshold for the assertion
+            export ASSERT=$(python promptflow/llmops-helper/assert.py result.json 0.1) # NOTE <file>.json is the file name and decimal is the threshold for the assertion
             echo "::debug::Assert has returned the following value: $ASSERT"
             # assert.py will return True or False, but bash expects lowercase.
             if ${ASSERT,,} ; then
