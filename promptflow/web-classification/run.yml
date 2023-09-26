@@ -7,8 +7,8 @@ runtime: pf-runtime
 
 connections:
   classify_with_llm:
-    connection: Default_AzureOpenAI
+    connection: azure_open_ai_connection
     deployment_name: gpt-35-turbo
   summarize_text_content:
-    connection: Default_AzureOpenAI
+    connection: azure_open_ai_connection
     deployment_name: gpt-35-turbo
